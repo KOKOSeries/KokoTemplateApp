@@ -14,8 +14,11 @@
 @implementation TabbarViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    [super viewDidLoad];
+    self.tabBar.tintColor = [UIColor redColor];
+    [UIColor colorNamed:@"tintColor"];
+    self.tabBar.barTintColor = [UIColor redColor]
+    ;[UIColor colorNamed:@"barTintColor"];
 }
 
 /*

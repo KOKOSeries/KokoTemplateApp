@@ -1,5 +1,5 @@
 //
-//  TabbarViewController.h
+//  HomeViewController.h
 //  KOKTemplateApp
 //
 //  Created by KOK on 4/12/2020.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TabbarViewController : UITabBarController
+@interface HomeViewController : UIViewController
 
 @end
 

@@ -16,6 +16,12 @@
 		E337E180257AE8980045328C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E337E17E257AE8980045328C /* LaunchScreen.storyboard */; };
 		E337E183257AE8980045328C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E182257AE8980045328C /* main.m */; };
 		E337E18C257AF2D00045328C /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E18B257AF2D00045328C /* TabbarViewController.m */; };
+		E337E190257B0D300045328C /* SetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E18F257B0D300045328C /* SetingViewController.m */; };
+		E337E196257B0D600045328C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E195257B0D600045328C /* HomeViewController.m */; };
+		E337E19F257B310E0045328C /* OpensourceSDKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E19E257B310E0045328C /* OpensourceSDKVC.m */; };
+		E337E1A2257B313E0045328C /* opensourceSDKdata.plist in Resources */ = {isa = PBXBuildFile; fileRef = E337E1A1257B313E0045328C /* opensourceSDKdata.plist */; };
+		E337E1B8257B381E0045328C /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E1B4257B381E0045328C /* YYWeakProxy.m */; };
+		E337E1B9257B381E0045328C /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E1B6257B381E0045328C /* YYFPSLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,17 @@
 		E337E182257AE8980045328C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E337E18A257AF2D00045328C /* TabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
 		E337E18B257AF2D00045328C /* TabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
+		E337E18E257B0D300045328C /* SetingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetingViewController.h; sourceTree = "<group>"; };
+		E337E18F257B0D300045328C /* SetingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetingViewController.m; sourceTree = "<group>"; };
+		E337E194257B0D600045328C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E337E195257B0D600045328C /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E337E19D257B310E0045328C /* OpensourceSDKVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpensourceSDKVC.h; sourceTree = "<group>"; };
+		E337E19E257B310E0045328C /* OpensourceSDKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpensourceSDKVC.m; sourceTree = "<group>"; };
+		E337E1A1257B313E0045328C /* opensourceSDKdata.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = opensourceSDKdata.plist; sourceTree = "<group>"; };
+		E337E1B4257B381E0045328C /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		E337E1B5257B381E0045328C /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		E337E1B6257B381E0045328C /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		E337E1B7257B381E0045328C /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +89,8 @@
 				E337E171257AE8970045328C /* SceneDelegate.m */,
 				E337E173257AE8970045328C /* ViewController.h */,
 				E337E174257AE8970045328C /* ViewController.m */,
-				E337E18A257AF2D00045328C /* TabbarViewController.h */,
-				E337E18B257AF2D00045328C /* TabbarViewController.m */,
+				E337E1B2257B381E0045328C /* ThirtyPart */,
+				E337E192257B0D370045328C /* vc */,
 				E337E176257AE8980045328C /* Main.storyboard */,
 				E337E17C257AE8980045328C /* Assets.xcassets */,
 				E337E17E257AE8980045328C /* LaunchScreen.storyboard */,
@@ -82,6 +99,41 @@
 				E337E179257AE8980045328C /* KOKTemplateApp.xcdatamodeld */,
 			);
 			path = KOKTemplateApp;
+			sourceTree = "<group>";
+		};
+		E337E192257B0D370045328C /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				E337E18A257AF2D00045328C /* TabbarViewController.h */,
+				E337E18B257AF2D00045328C /* TabbarViewController.m */,
+				E337E18E257B0D300045328C /* SetingViewController.h */,
+				E337E18F257B0D300045328C /* SetingViewController.m */,
+				E337E194257B0D600045328C /* HomeViewController.h */,
+				E337E195257B0D600045328C /* HomeViewController.m */,
+				E337E19D257B310E0045328C /* OpensourceSDKVC.h */,
+				E337E19E257B310E0045328C /* OpensourceSDKVC.m */,
+				E337E1A1257B313E0045328C /* opensourceSDKdata.plist */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		E337E1B2257B381E0045328C /* ThirtyPart */ = {
+			isa = PBXGroup;
+			children = (
+				E337E1B3257B381E0045328C /* YYFPSLabel */,
+			);
+			path = ThirtyPart;
+			sourceTree = "<group>";
+		};
+		E337E1B3257B381E0045328C /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E337E1B4257B381E0045328C /* YYWeakProxy.m */,
+				E337E1B5257B381E0045328C /* YYFPSLabel.h */,
+				E337E1B6257B381E0045328C /* YYFPSLabel.m */,
+				E337E1B7257B381E0045328C /* YYWeakProxy.h */,
+			);
+			path = YYFPSLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E337E1A2257B313E0045328C /* opensourceSDKdata.plist in Resources */,
 				E337E180257AE8980045328C /* LaunchScreen.storyboard in Resources */,
 				E337E17D257AE8980045328C /* Assets.xcassets in Resources */,
 				E337E178257AE8980045328C /* Main.storyboard in Resources */,
@@ -156,9 +209,14 @@
 				E337E183257AE8980045328C /* main.m in Sources */,
 				E337E175257AE8970045328C /* ViewController.m in Sources */,
 				E337E18C257AF2D00045328C /* TabbarViewController.m in Sources */,
+				E337E1B9257B381E0045328C /* YYFPSLabel.m in Sources */,
 				E337E17B257AE8980045328C /* KOKTemplateApp.xcdatamodeld in Sources */,
+				E337E1B8257B381E0045328C /* YYWeakProxy.m in Sources */,
+				E337E190257B0D300045328C /* SetingViewController.m in Sources */,
+				E337E19F257B310E0045328C /* OpensourceSDKVC.m in Sources */,
 				E337E16F257AE8970045328C /* AppDelegate.m in Sources */,
 				E337E172257AE8970045328C /* SceneDelegate.m in Sources */,
+				E337E196257B0D600045328C /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
