@@ -8,6 +8,7 @@
 #import "SetingViewController.h"
 #import "OpensourceSDKVC.h"
 #import "YYFPSLabel.h"
+#import <SafariServices/SafariServices.h>
 @interface SetingViewController ()
 
 /// header View
@@ -67,25 +68,46 @@
 
 /// fps 
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *logo;
+@property (weak, nonatomic) IBOutlet UILabel *logoname;
+
 @end
 
 @implementation SetingViewController
 - (IBAction)buttonClick:(UIButton *)sender {
     switch (sender.tag) {
-        case 0:{
+        case 0:{ 
             NSLog(@"%ld",sender.tag);
-            [self.navigationController pushViewController:[[OpensourceSDKVC alloc]init] animated:YES];
+            OpensourceSDKVC *vc = [[OpensourceSDKVC alloc]initWithNibName:@"OpensourceSDKVC" bundle:[NSBundle mainBundle]];
+            [self.navigationController pushViewController: vc animated:YES];
         } break;
         case 1:{
             NSLog(@"%ld",sender.tag);
+            NSURL *url = [NSURL URLWithString:@""];
+            SFSafariViewController *vc = [[SFSafariViewController alloc]initWithURL:@""];
+            vc.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:vc animated:YES completion:^{}];
         }break;
         case 2:{
+            NSURL *url = [NSURL URLWithString:@""];
+            SFSafariViewController *vc = [[SFSafariViewController alloc]initWithURL:@""];
+            vc.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:vc animated:YES completion:^{}];
             NSLog(@"%ld",sender.tag);
         }break;
         case 3:{
+            NSURL *url = [NSURL URLWithString:@""];
+            SFSafariViewController *vc = [[SFSafariViewController alloc]initWithURL:@""];
+            vc.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:vc animated:YES completion:^{}];
             NSLog(@"%ld",sender.tag);
         }break;
         case 4:{
+            NSURL *url = [NSURL URLWithString:@""];
+            SFSafariViewController *vc = [[SFSafariViewController alloc]initWithURL:@""];
+            vc.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:vc animated:YES completion:^{}];
             NSLog(@"%ld",sender.tag);
         }break;
         case 5:{
@@ -98,11 +120,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.titleLabelA.text = @"Open source Data";
+    self.titleLabelB.text = @"About us";
+    self.titleLabelC.text = @"Privacy policy";
+    self.titleLabelD.text = @"Suport web";
+    self.titleLabelE.text = @"My Plane";
+//    self.rightimageViewA.image = [UIImage imageNamed:@"right"];
+//    self.rightimageViewB.image = [UIImage imageNamed:@"right"];
+//    self.rightimageViewC.image = [UIImage imageNamed:@"right"];
+//    self.rightimageViewD.image = [UIImage imageNamed:@"right"];
+//    self.rightimageViewE.image = [UIImage imageNamed:@"right"];
+
+    
+//    self.titleLabelB.text = @"";
     // Do any additional setup after loading the view.
-    _fpsLabel = [YYFPSLabel new];
-    _fpsLabel.frame = CGRectMake(200, 200, 50, 30);
-    [_fpsLabel sizeToFit];
-    [self.view addSubview:_fpsLabel];
+//    _fpsLabel = [YYFPSLabel new];
+//    _fpsLabel.frame = CGRectMake(200,e 200, 50, 30);
+//    [_fpsLabel sizeToFit];
+//    [self.view addSubview:_fpsLabel];
 }
 
 @end

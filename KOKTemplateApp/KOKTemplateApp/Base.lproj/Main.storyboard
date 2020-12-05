@@ -12,7 +12,7 @@
         <!--Setting-->
         <scene sceneID="fja-ff-NlX">
             <objects>
-                <viewController id="2hL-oa-3Zk" customClass="SetingViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="2hL-oa-3Zk" customClass="SetingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JRy-vY-hCE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,10 +33,29 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-zU-3Ck">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hxC-Pg-MCA">
+                                                            <rect key="frame" x="116" y="55" width="182" height="182"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="182" id="Odz-oc-LQE"/>
+                                                                <constraint firstAttribute="height" constant="182" id="ST9-EE-amm"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EY0-zJ-aWQ">
+                                                            <rect key="frame" x="186.5" y="271" width="41.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstItem="EY0-zJ-aWQ" firstAttribute="top" secondItem="hxC-Pg-MCA" secondAttribute="bottom" constant="34" id="6gk-LE-4Z8"/>
+                                                        <constraint firstItem="hxC-Pg-MCA" firstAttribute="top" secondItem="1N0-zU-3Ck" secondAttribute="top" constant="55" id="JvJ-yE-JQG"/>
+                                                        <constraint firstItem="EY0-zJ-aWQ" firstAttribute="centerX" secondItem="1N0-zU-3Ck" secondAttribute="centerX" id="KWa-c9-HDe"/>
                                                         <constraint firstAttribute="height" constant="350" id="qKp-3x-tuu"/>
+                                                        <constraint firstItem="hxC-Pg-MCA" firstAttribute="centerX" secondItem="1N0-zU-3Ck" secondAttribute="centerX" id="whQ-cp-Mis"/>
                                                     </constraints>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="scI-S5-oqm">
@@ -46,19 +65,23 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYn-lw-x9L">
-                                                                    <rect key="frame" x="58" y="23.5" width="80" height="20.5"/>
+                                                                    <rect key="frame" x="69" y="23.5" width="80" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-ES-NvS">
-                                                                    <rect key="frame" x="20" y="22.5" width="19" height="21"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                                    <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-ES-NvS">
+                                                                    <rect key="frame" x="20" y="19" width="30" height="29.5"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                    <color key="tintColor" name="tintColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="30" id="YSX-LK-gW7"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="qfN-W2-IC3"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y4q-3M-ZmJ">
                                                                     <rect key="frame" x="373" y="24.5" width="21" height="17.5"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                                     <color key="tintColor" name="tintColor"/>
                                                                 </imageView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-Eo-E9j">
@@ -89,19 +112,23 @@
                                                             <rect key="frame" x="0.0" y="67" width="414" height="67.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99R-5R-S1x">
-                                                                    <rect key="frame" x="58" y="23.5" width="80" height="20.5"/>
+                                                                    <rect key="frame" x="69" y="23.5" width="80" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aiJ-eY-fVs">
-                                                                    <rect key="frame" x="20" y="23" width="19" height="21"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                                    <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aiJ-eY-fVs">
+                                                                    <rect key="frame" x="20" y="20.5" width="30" height="27.5"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                    <color key="tintColor" name="tintColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="Oda-Iz-edr"/>
+                                                                        <constraint firstAttribute="width" constant="30" id="aST-xj-uuP"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-eb-0Mp">
                                                                     <rect key="frame" x="373" y="25" width="21" height="17.5"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                                     <color key="tintColor" name="tintColor"/>
                                                                 </imageView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as1-Jv-evH">
@@ -132,19 +159,23 @@
                                                             <rect key="frame" x="0.0" y="134.5" width="414" height="67"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dm-pN-dGB">
-                                                                    <rect key="frame" x="58" y="23.5" width="80" height="20.5"/>
+                                                                    <rect key="frame" x="69" y="23.5" width="80" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-Xe-cjf">
-                                                                    <rect key="frame" x="20" y="22.5" width="19" height="21"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                                    <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lasso.sparkles" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-Xe-cjf">
+                                                                    <rect key="frame" x="20" y="15.5" width="30" height="33.5"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                    <color key="tintColor" name="tintColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="30" id="V4G-CI-2sc"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="o5L-bL-Ef8"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tZq-hR-hTl">
                                                                     <rect key="frame" x="373" y="24.5" width="21" height="17.5"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                                     <color key="tintColor" name="tintColor"/>
                                                                 </imageView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqB-11-q7D">
@@ -175,19 +206,23 @@
                                                             <rect key="frame" x="0.0" y="201.5" width="414" height="67.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxr-mG-mk8">
-                                                                    <rect key="frame" x="58" y="23.5" width="80" height="20.5"/>
+                                                                    <rect key="frame" x="69" y="23.5" width="80" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="seb-Kk-GCY">
-                                                                    <rect key="frame" x="20" y="22.5" width="19" height="21"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                                    <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xserve" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="seb-Kk-GCY">
+                                                                    <rect key="frame" x="20" y="20" width="30" height="26.5"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                    <color key="tintColor" name="tintColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="30" id="AiC-YT-40V"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="KYf-Fv-pjT"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hnR-kc-cj1">
                                                                     <rect key="frame" x="373" y="24.5" width="21" height="17.5"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                                     <color key="tintColor" name="tintColor"/>
                                                                 </imageView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prb-QU-Zw1">
@@ -218,19 +253,23 @@
                                                             <rect key="frame" x="0.0" y="269" width="414" height="67"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-yh-nu3">
-                                                                    <rect key="frame" x="58" y="23" width="80" height="20.5"/>
+                                                                    <rect key="frame" x="69" y="23" width="80" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7lO-GX-uef">
-                                                                    <rect key="frame" x="20" y="22.5" width="19" height="21"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                                    <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7lO-GX-uef">
+                                                                    <rect key="frame" x="20" y="19" width="30" height="29"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                    <color key="tintColor" name="tintColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="exk-xs-MGF"/>
+                                                                        <constraint firstAttribute="width" constant="30" id="pDZ-dw-OgX"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qoD-bY-fr9">
                                                                     <rect key="frame" x="373" y="24.5" width="21" height="17.5"/>
-                                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                                     <color key="tintColor" name="tintColor"/>
                                                                 </imageView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v19-C2-z2f">
@@ -300,6 +339,8 @@
                         <outlet property="leftimageViewB" destination="aiJ-eY-fVs" id="Hnd-24-N2J"/>
                         <outlet property="leftimageViewD" destination="seb-Kk-GCY" id="glE-ny-UbG"/>
                         <outlet property="leftimageViewE" destination="7lO-GX-uef" id="1yU-rn-orK"/>
+                        <outlet property="logo" destination="hxC-Pg-MCA" id="IyM-Ne-6oU"/>
+                        <outlet property="logoname" destination="EY0-zJ-aWQ" id="01s-iI-C0o"/>
                         <outlet property="rightimageViewA" destination="y4q-3M-ZmJ" id="pIv-Ft-4c1"/>
                         <outlet property="rightimageViewB" destination="Tut-eb-0Mp" id="zaN-kO-2ew"/>
                         <outlet property="rightimageViewC" destination="Keh-Xe-cjf" id="sZ4-js-9fN"/>
@@ -336,7 +377,7 @@
         <!--Tabbar View Controller-->
         <scene sceneID="nLp-wc-wFa">
             <objects>
-                <tabBarController id="LrX-1a-2xu" customClass="TabbarViewController" customModule="KOKTemplateApp" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabbarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LrX-1a-2xu" customClass="TabbarViewController" customModule="KOKTemplateApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0PW-tj-kqA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -396,17 +437,21 @@
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <image name="lasso.sparkles" catalog="system" width="122" height="128"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="tortoise" catalog="system" width="128" height="68"/>
         <image name="tortoise.fill" catalog="system" width="128" height="66"/>
+        <image name="xserve" catalog="system" width="128" height="88"/>
         <namedColor name="tintColor">
             <color red="0.11299999803304672" green="0.19900000095367432" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

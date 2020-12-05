@@ -7,7 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
-
+#import "KOKWindowHelperVC.h"
 @interface SceneDelegate ()
 
 @end
@@ -16,16 +16,15 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-
-//
-//    UIWindow *window = [[UIWindow alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-//    window.backgroundColor = [UIColor redColor];
-//    
-//    scene = window.windowScene;
-//    window.windowLevel = UIWindowLevelStatusBar + 1;
-//
-//    [self.window addSubview:window];
-//
+    
+//    UIWindow *window2 = [[UIWindow alloc]initWithWindowScene:(UIWindowScene *)scene];
+//    window2.windowLevel = self.window.windowLevel + 1;
+//    UIViewController *vc =     [[UIViewController alloc]init];
+//    vc.view.backgroundColor = [UIColor redColor];
+//    window2.rootViewController = vc;
+//    [window2.rootViewController.view addSubview:self.window];
+    [[KOKWindowHelperVC shared] enable];
+    
     
 }
 
@@ -67,3 +66,49 @@
 
 
 @end
+
+//    UIWindowScene *windowScene = (UIWindowScene *)scene;
+//        self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+//        self.window.frame = windowScene.coordinateSpace.bounds;
+//        self.window.rootViewController = [UITabBarController new];
+//        [self.window makeKeyAndVisible];
+////
+ 
+ 
+//    UIWindow *window = [[UIWindow alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    window.backgroundColor = [UIColor redColor];
+//
+//    scene = window.windowScene;
+//    window.windowLevel = UIWindowLevelStatusBar + 1;
+//
+//    [self.window addSubview:window];
+//
+//    self.windowScene = (UIWindowScene *)scene;
+//    UIWindow *window2 = [[UIWindow alloc]initWithWindowScene:self.windowScene];
+//
+//    window2.frame = CGRectMake(200, 200, 200, 200);
+//    UIViewController *vc =     [[UIViewController alloc]init];
+//    vc.view.backgroundColor = [UIColor redColor];
+//    window2.rootViewController = vc;
+//    window2.windowLevel = 1;
+//    [window2 setHidden:NO];
+//    [window2.rootViewController.view addSubview:self.window.rootViewController.view];
+ 
+//    NSLog(@"%f",self.window.windowLevel);
+ 
+//      self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+ 
+ 
+//      self.window.frame = windowScene.coordinateSpace.bounds;
+//      self.window.rootViewController = [UITabBarController new];
+//      [self.window makeKeyAndVisible];
+
+//static SceneDelegate * sceneDelegate = nil;
+//+ (SceneDelegate *)shared{
+//    @synchronized(self){
+//         if (sceneDelegate == nil) {
+//
+//         }
+//     }
+//     return sceneDelegate;
+//}
