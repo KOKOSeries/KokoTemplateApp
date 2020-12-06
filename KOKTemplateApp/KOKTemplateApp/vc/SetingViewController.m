@@ -84,6 +84,7 @@
         } break;
         case 1:{
             NSLog(@"%ld",sender.tag);
+            
             NSURL *url = [NSURL URLWithString:@""];
             SFSafariViewController *vc = [[SFSafariViewController alloc]initWithURL:@""];
             vc.modalPresentationStyle = UIModalPresentationFullScreen;
