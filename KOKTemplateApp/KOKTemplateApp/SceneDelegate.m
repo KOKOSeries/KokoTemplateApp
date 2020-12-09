@@ -7,23 +7,39 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
-#import "KOKWindowHelperVC.h"
+#import "KOKGuide.h"
 @interface SceneDelegate ()
 
 @end
 
 @implementation SceneDelegate
+static SceneDelegate *static_sceneDelegate = nil;
++(instancetype)sharedInstance{
+    @synchronized(self){
+        if (!static_sceneDelegate) {
+            static_sceneDelegate = SceneDelegate.new;
+        }
+    }return static_sceneDelegate;
+}
 
-
+-(instancetype)init{
+    if (self = [super init]) {
+        static_sceneDelegate = self;
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(noti1:)
+                                                     name:UISceneWillConnectNotification
+                                                   object:nil];
+    }return self;
+}
+-(void)noti1:(NSNotification *)notification{
+    self.windowScene = notification.object;
+}
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    
-//    UIWindow *window2 = [[UIWindow alloc]initWithWindowScene:(UIWindowScene *)scene];
-//    window2.windowLevel = self.window.windowLevel + 1;
-//    UIViewController *vc =     [[UIViewController alloc]init];
-//    vc.view.backgroundColor = [UIColor redColor];
-//    window2.rootViewController = vc;
-//    [window2.rootViewController.view addSubview:self.window];
-    [[KOKWindowHelperVC shared] enable];
+//    [ad scene:self.windowScene];
+    self.windowScene = (UIWindowScene *)scene;
+    KOKGuide *guide = [KOKGuide share];
+    [guide scene:self.windowScene];
+    self.window.alpha = 1;
     
     
 }

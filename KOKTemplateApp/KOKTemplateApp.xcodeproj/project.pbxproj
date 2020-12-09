@@ -22,8 +22,8 @@
 		E337E1B9257B381E0045328C /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E1B6257B381E0045328C /* YYFPSLabel.m */; };
 		E38EDD78257C066C0055CC7C /* OpensourceSDKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E38EDD76257C066C0055CC7C /* OpensourceSDKVC.m */; };
 		E38EDD79257C066C0055CC7C /* OpensourceSDKVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38EDD77257C066C0055CC7C /* OpensourceSDKVC.xib */; };
-		E3E52188257B5D9F00D0D7DB /* KOKWindowHelperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E52187257B5D9F00D0D7DB /* KOKWindowHelperVC.m */; };
-		E3E5218C257B5E0600D0D7DB /* KOKWIndow.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E5218B257B5E0600D0D7DB /* KOKWIndow.m */; };
+		E3B4086C2580709C00C0C88D /* KOKGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B4086B2580709C00C0C88D /* KOKGuide.m */; };
+		E3B40871258070F000C0C88D /* KOKGuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B40870258070F000C0C88D /* KOKGuideVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,10 +52,10 @@
 		E38EDD75257C066C0055CC7C /* OpensourceSDKVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpensourceSDKVC.h; sourceTree = "<group>"; };
 		E38EDD76257C066C0055CC7C /* OpensourceSDKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpensourceSDKVC.m; sourceTree = "<group>"; };
 		E38EDD77257C066C0055CC7C /* OpensourceSDKVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpensourceSDKVC.xib; sourceTree = "<group>"; };
-		E3E52186257B5D9F00D0D7DB /* KOKWindowHelperVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KOKWindowHelperVC.h; sourceTree = "<group>"; };
-		E3E52187257B5D9F00D0D7DB /* KOKWindowHelperVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOKWindowHelperVC.m; sourceTree = "<group>"; };
-		E3E5218A257B5E0600D0D7DB /* KOKWIndow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KOKWIndow.h; sourceTree = "<group>"; };
-		E3E5218B257B5E0600D0D7DB /* KOKWIndow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOKWIndow.m; sourceTree = "<group>"; };
+		E3B4086A2580709C00C0C88D /* KOKGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KOKGuide.h; sourceTree = "<group>"; };
+		E3B4086B2580709C00C0C88D /* KOKGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOKGuide.m; sourceTree = "<group>"; };
+		E3B4086F258070F000C0C88D /* KOKGuideVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KOKGuideVC.h; sourceTree = "<group>"; };
+		E3B40870258070F000C0C88D /* KOKGuideVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOKGuideVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +94,7 @@
 				E337E171257AE8970045328C /* SceneDelegate.m */,
 				E337E173257AE8970045328C /* ViewController.h */,
 				E337E174257AE8970045328C /* ViewController.m */,
-				E3E5218A257B5E0600D0D7DB /* KOKWIndow.h */,
-				E3E5218B257B5E0600D0D7DB /* KOKWIndow.m */,
-				E3E52186257B5D9F00D0D7DB /* KOKWindowHelperVC.h */,
-				E3E52187257B5D9F00D0D7DB /* KOKWindowHelperVC.m */,
+				E3B408692580708200C0C88D /* KOKGuide */,
 				E337E1B2257B381E0045328C /* ThirtyPart */,
 				E337E192257B0D370045328C /* vc */,
 				E337E176257AE8980045328C /* Main.storyboard */,
@@ -142,6 +139,17 @@
 				E337E1B7257B381E0045328C /* YYWeakProxy.h */,
 			);
 			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
+		E3B408692580708200C0C88D /* KOKGuide */ = {
+			isa = PBXGroup;
+			children = (
+				E3B4086A2580709C00C0C88D /* KOKGuide.h */,
+				E3B4086B2580709C00C0C88D /* KOKGuide.m */,
+				E3B4086F258070F000C0C88D /* KOKGuideVC.h */,
+				E3B40870258070F000C0C88D /* KOKGuideVC.m */,
+			);
+			path = KOKGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,13 +227,13 @@
 				E337E175257AE8970045328C /* ViewController.m in Sources */,
 				E38EDD78257C066C0055CC7C /* OpensourceSDKVC.m in Sources */,
 				E337E1B9257B381E0045328C /* YYFPSLabel.m in Sources */,
-				E3E5218C257B5E0600D0D7DB /* KOKWIndow.m in Sources */,
 				E337E17B257AE8980045328C /* KOKTemplateApp.xcdatamodeld in Sources */,
 				E337E1B8257B381E0045328C /* YYWeakProxy.m in Sources */,
 				E337E190257B0D300045328C /* SetingViewController.m in Sources */,
-				E3E52188257B5D9F00D0D7DB /* KOKWindowHelperVC.m in Sources */,
 				E337E16F257AE8970045328C /* AppDelegate.m in Sources */,
 				E337E172257AE8970045328C /* SceneDelegate.m in Sources */,
+				E3B40871258070F000C0C88D /* KOKGuideVC.m in Sources */,
+				E3B4086C2580709C00C0C88D /* KOKGuide.m in Sources */,
 				E337E196257B0D600045328C /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
